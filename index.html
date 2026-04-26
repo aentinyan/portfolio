@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Карина Дмитриева — Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+    <span class="theme-icon">◐</span>
+  </button>
+
+  <div class="progress-bar" id="progressBar"></div>
+
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo">КД</a>
+    <button class="nav-burger" id="navBurger" aria-label="Меню">
+      <span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">Обо мне</a></li>
+      <li><a href="#experience" class="nav-link">Опыт</a></li>
+      <li><a href="#skills" class="nav-link">Навыки</a></li>
+      <li><a href="#projects" class="nav-link">Проекты</a></li>
+      <li><a href="#contact" class="nav-link">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"><img src="src/1.jpg" alt="Карина Дмитриева" /></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Designer · Санкт-Петербург</p>
+      <h1 class="hero-name reveal">
+        <span class="hero-name-first">Карина</span>
+        <em class="hero-name-last">Дмитриева</em>
+      </h1>
+      <p class="hero-tagline reveal">Создаю обертки для брендов,<br>которые запоминаются.</p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">Смотреть проекты</a>
+        <a href="#contact" class="btn btn-ghost">Написать мне</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Скролл</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat reveal">
+        <span class="stat-num" data-target="4">0</span>
+        <span class="stat-label">года опыта</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-num" data-target="27">0</span>
+        <span class="stat-label">проектов</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-num" data-target="3">0</span>
+        <span class="stat-label">клиентов</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">01 / О себе</span>
+        <h2 class="section-title">Кто я такая</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo reveal">
+          <div class="photo-frame">
+            <div class="photo-placeholder">
+              <img src="src/2.jpg" alt="Карина Дмитриева" />
+            </div>
+            <div class="photo-border"></div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p class="about-lead">Дизайнер с фокусом на создании быстрых, красивых и доступных графических элементов.</p>
+          <p>Верю, что хороший дизайн — это не только красивая картинка, но и решение реальных задач пользователя.</p>
+          <p>В свободное время изучаю дизайн-системы, анимации в браузере и технологии, которые помогают мне в работе.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">02 / Опыт</span>
+        <h2 class="section-title">Где я работала</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2022 — 2023</div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">Дизайнер</h3>
+            <p class="timeline-company">СПбГБУ ПМК «Ровесник»</p>
+            <p class="timeline-desc">Создание буклетов для семинаров и конференций.</p>
+            <div class="timeline-tags">
+              <span class="tag-sm">Adobe Photoshop</span>
+              <span class="tag-sm">Adobe Illustrator</span>
+              <span class="tag-sm">Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">03 / Образование</span>
+        <h2 class="section-title">Где училась</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-year">2022 — 2027</div>
+          <div class="edu-body">
+            <h3>Бакалавр — Прикладная информатика в дизайне</h3>
+            <p>Санкт-Петербургский государственный университет промышленных технологий и дизайна</p>
+          </div>
+          <div class="edu-badge">Диплом с отличием (в идеале)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">04 / Навыки</span>
+        <h2 class="section-title">Что умею</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Программирование</h3>
+          <div class="skill-bars">
+            <div class="skill-bar"><span class="skill-name">HTML / CSS / SCSS</span><div class="skill-track"><div class="skill-fill" data-width="95"></div></div></div>
+            <div class="skill-bar"><span class="skill-name">JavaScript</span><div class="skill-track"><div class="skill-fill" data-width="88"></div></div></div>
+            <div class="skill-bar"><span class="skill-name">Python</span><div class="skill-track"><div class="skill-fill" data-width="85"></div></div></div>
+            <div class="skill-bar"><span class="skill-name">TypeScript</span><div class="skill-track"><div class="skill-fill" data-width="80"></div></div></div>
+            <div class="skill-bar"><span class="skill-name">C++</span><div class="skill-track"><div class="skill-fill" data-width="70"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Дизайн</h3>
+          <div class="skill-bars">
+            <div class="skill-bar"><span class="skill-name">Figma</span><div class="skill-track"><div class="skill-fill" data-width="90"></div></div></div>
+            <div class="skill-bar"><span class="skill-name">Adobe Photoshop</span><div class="skill-track"><div class="skill-fill" data-width="78"></div></div></div>
+            <div class="skill-bar"><span class="skill-name">Adpbe Illustrator</span><div class="skill-track"><div class="skill-fill" data-width="75"></div></div></div>
+            <div class="skill-bar"><span class="skill-name">Adobe InDesign</span><div class="skill-track"><div class="skill-fill" data-width="55"></div></div></div>
+            <div class="skill-bar"><span class="skill-name">Adobe XD</span><div class="skill-track"><div class="skill-fill" data-width="60"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Soft Skills</h3>
+          <div class="soft-pills">
+            <span class="soft-pill">Командная работа</span>
+            <span class="soft-pill">Критическое мышление</span>
+            <span class="soft-pill">Тайм-менеджмент</span>
+            <span class="soft-pill">Ответственность</span>
+            <span class="soft-pill">Эмоциональный интеллект</span>
+            <span class="soft-pill">Самоорганизация</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Языки</h3>
+          <div class="lang-list">
+            <div class="lang-item"><span>Русский</span><span class="lang-level native">Родной</span></div>
+            <div class="lang-item"><span>Английский</span><span class="lang-level b2">B2</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">05 / Проекты</span>
+        <h2 class="section-title">Что сделала</h2>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card reveal" data-index="01">
+          <div class="project-header">
+            <span class="project-num">01</span>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="GitHub">↗</a>
+            </div>
+          </div>
+          <h3 class="project-title">When Trees Cry — Web-анимация</h3>
+          <p class="project-desc">Веб-анимация на JavaScript с использованием HTML5 Canvas.</p>
+          <div class="project-tech">
+            <span>Adobe Animate</span><span>JavaScript</span><span>Paint Tool SAI</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-index="02">
+          <div class="project-header">
+            <span class="project-num">02</span>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="GitHub">↗</a>
+            </div>
+          </div>
+          <h3 class="project-title">SlayClay — Веб-сайт студии глинолепки</h3>
+          <p class="project-desc">Веб-сайт студии лепки из глины, керамики и т. д. Реализовано на HTML, CSS3 и JavaScript.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS Modules</span><span>JavaScript</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">06 / Контакты</span>
+        <h2 class="section-title">Свяжитесь<br><em>со мной</em></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-lead">Открыта к новым проектам и интересным предложениям. Отвечаю в течение 24 часов.</p>
+          <ul class="contact-list">
+            <li><a href="mailto:a.sokolov@example.com" class="contact-item"><span class="contact-icon">✉</span>k.dmitrieva@example.com</a></li>
+            <li><a href="tel:+79161234567" class="contact-item"><span class="contact-icon">✆</span>+7 999 123-45-67</a></li>
+            <li><a href="#" class="contact-item"><span class="contact-icon">➤</span>Telegram: @dmitrieva_designer</a></li>
+          </ul>
+        </div>
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Имя *</label>
+            <input type="text" id="name" name="name" placeholder="Иван Иванов" required />
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="ivan@example.com" required />
+            <span class="form-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Сообщение *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Расскажите о вашем проекте..." required></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span class="btn-text">Отправить сообщение</span>
+            <span class="btn-spinner" hidden>⟳</span>
+          </button>
+          <div class="form-success" id="formSuccess" hidden>
+            ✓ Сообщение отправлено! Отвечу в течение 24 часов.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">КД</div>
+        <p class="footer-copy">© 2026 Карина Дмитриева. Все права защищены.</p>
+      </div>
+      <div class="footer-meta">
+        <div class="footer-meta-block">
+          <h4>Использована нейросеть</h4>
+          <p><strong>Claude (Anthropic)</strong> — помог создать структуру, дизайн и контент сайта</p>
+          <p class="footer-time">⏱ Время выполнения: ~45 минут</p>
+        </div>
+        <div class="footer-meta-block">
+          <h4>JavaScript-функционал</h4>
+          <ul class="footer-js-list">
+            <li>Кастомный курсор с плавным следованием</li>
+            <li>Анимации при прокрутке (Intersection Observer)</li>
+            <li>Переключение тёмной / светлой темы</li>
+            <li>Прогресс-бар чтения страницы</li>
+            <li>Анимированные счётчики в Hero-секции</li>
+            <li>Анимированные skill bars при появлении</li>
+            <li>Валидация формы обратной связи</li>
+            <li>Бургер-меню для мобильных устройств</li>
+            <li>Фиксированный nav с эффектом при скролле</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
